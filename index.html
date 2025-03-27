@@ -19,7 +19,7 @@
 
         .carousel-container {
             width: 100%;
-            max-width: 1000px;
+            max-width: 2000px;
             position: relative;
             overflow: hidden;
         }
@@ -34,29 +34,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px;
             box-sizing: border-box;
         }
 
         .cabinet-frame {
             position: relative;
             width: 100%;
-            max-width: 600px;
-            aspect-ratio: 4/3;
+            max-width: 900px;
+            aspect-ratio: 2/3;
             background-image: url("images/cabinet-frame.png");
             background-size: 100% 100%;
             background-repeat: no-repeat;
             display: flex;
             justify-content: center;
-            align-items: center;
-            padding: 5%;
+            align-items: flex-start;
+            padding: 0;
             box-sizing: border-box;
+            overflow: hidden;
         }
 
         .iframe-wrapper {
-            width: 65%;
-            height: 55%;
-            position: relative;
+            width: 75%; /* 4:3 aspect ratio screen */
+            aspect-ratio: 4/3;
+            position: absolute;
+            top: 12%; /* 12% margin from the top */
+            left: 50%;
+            transform: translateX(-50%);
             z-index: 2;
         }
 
@@ -80,9 +84,9 @@
             background-color: rgba(255,255,255,0.2);
             color: white;
             border: none;
-            font-size: 2rem;
+            font-size: 4rem;
             cursor: pointer;
-            padding: 10px 15px;
+            padding: 20px 30px;
             border-radius: 5px;
             transition: background-color 0.3s;
             z-index: 10;
@@ -99,21 +103,21 @@
             <div class="arcade-cabinet">
                 <div class="cabinet-frame">
                     <div class="iframe-wrapper">
-                        <iframe src="https://example.com/game1" allowfullscreen></iframe>
+                        <iframe src="https://willsh1997-littlefreaksgradio.hf.space" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="arcade-cabinet">
                 <div class="cabinet-frame">
                     <div class="iframe-wrapper">
-                        <iframe src="https://example.com/game2" allowfullscreen></iframe>
+                        <iframe src="https://willsh1997-neutral-sd-dev.hf.space" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="arcade-cabinet">
                 <div class="cabinet-frame">
                     <div class="iframe-wrapper">
-                        <iframe src="https://example.com/game3" allowfullscreen></iframe>
+                        <iframe src="https://willsh1997-llm-multilingual-demo.hf.space" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
